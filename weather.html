@@ -1,29 +1,50 @@
 <html>
-    <head>
-        <title>Demo with JSON, jQuery and Bootstrap</title>
-                <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">  
-                <link href="weather.css">
-    </head>
-    <body>
-		<div class="container">
-		    <div class="jumbotron">
-		         <h1>Weather App</h1>
 
-		        <p class="lead">OpenWeatherMap API and Bootstrap.</p>
-		        <p>
-		            <div class="input-group">
-		                <input type="text" class="form-control" id='location' placeholder="zipcode or city, country" aria-describedby="basicJS-addon1">
-		            </div>
-		        </p>
-		        <p><a class="btn btn-lg btn-primary" href="#submit">Submit</a>
+  <head>
+    <title>Demo with JSON, jQuery and Bootstrap</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+     <link rel="stylesheet" href="weather.css">
+  </head>
 
-		        </p>
-		         <h2></h2>
-		         <h3></h3>
+  <body>
+    <div id="background">
+      <div class="container">
 
-		    </div>
-		</div>
-	</body>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script type="text/javascript" src="weather.js"></script>
+
+        <div class="header clearfix">
+          <nav>
+            <ul class="nav nav-pills pull-right">
+              <li role="presentation" class="active"><a href="#">Home</a></li>
+              <li role="presentation"><a href="#">About</a></li>
+              <li role="presentation"><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <h3 class="text-muted">Current Weather</h3>
+          <div class="jumbotron">
+            <div class="form text-center">
+                  <h1 class="outline-text">Weather App</h1>
+                  <h2 class="outline-text">OpenWeatherMap, Flickr and Bootstrap.</h2>
+                  <p>
+                    <div class="input-group col-lg-4 col-lg-offset-4">
+                    <input type="text" class="form-control" id='location' placeholder="zipcode or city, country" aria-describedby="basicJS-addon1">
+                  </div>
+                </p>
+                <p><a class="btn btn-lg btn-primary" href="#submit">Submit</a>
+
+                </p><span>
+                <h2 id='weather-tag' class="outline-text"></h2>
+                <h3 id='weather-temp' class="outline-text"></h3>
+              </span>
+              </div>
+        </div>
+
+        <footer class="footer">
+          <p>&copy; 2016 Alex Ruiz.</p>
+        </footer>
+      </div>
+      <!-- /Container -->
+  </body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script type="text/javascript" src="weather.js"></script>
+
 </html>
