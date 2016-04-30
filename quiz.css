@@ -1,0 +1,56 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #404040;
+  background-color: #eee;
+}
+
+ul,
+ol {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  color: #fff;
+  border-top: 1px solid #fe9772;
+  border-bottom: 1px solid #9f593f;
+  font-size: 24px;
+  letter-spacing: .05em;
+  list-style-type: none;
+  text-shadow: 2px 2px 1px #9f593f;
+  text-align: left;
+  height: 50px;
+  padding-left: 1em;
+  padding-top: 10px;
+}
+
+.btn {
+  background-color: #cb6868;
+  color: #f3dad1;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 10px;
+  margin-top: 10px;
+  font-family: 'Oswald', 'Futura', sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.question {
+  background-color: #CC1D1D;
+}
+
+.answers {
+  background-color: #ec8b68;
+}
+
+a {
+  text-decoration: none;
+  color: #fff
+}
+
+ol li:hover {
+  background: green;
+}
